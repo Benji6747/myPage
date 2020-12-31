@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+
+
+#body{
+    background-color: rgb(132, 170, 190);
+    width: 400px;
+    border-radius: 40px;
+    border: 10px solid rgb(38, 67, 90);
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 40px;
+ 
+}
+
+h2{
+    margin-left: 20px;
+    margin-top: -1px;
+    font-size: 15px;
+    color: green;letter-spacing: 3px;
+}
+
+h3{
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+h5{
+    margin-left: 250px;
+    margin-top: -25px;
+}
+
+#solar{
+    margin-left: 200px;
+    width: 180px;
+    height: 60px;
+    background-color: rgb(53, 32, 32);
+    margin-top: -50px;
+    border-radius: 10px;
+    box-shadow: inset 0.4em 0.4em 0.4em 0 rgba(34, 9, 9, 0.5), inset -0.4em -0.4em 0 rgba(34, 9, 9, 0.5) ;
+}
+#display{
+    width: 355px;
+    height: 100px; 
+    background-color: rgb(57, 73, 46);
+    margin-left: 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 10px;
+    box-shadow: inset 0.4em 0.4em 0.4em 0 rgba(255, 255, 255, 0.5), inset -0.4em -0.4em 0 rgba(255, 255, 255, 0.5) ;
+}
+
+#shift{
+    margin-left: 35px;
+}
+
+#alpha{
+    margin-left: 100px;
+    margin-top: -37px;
+    color: rgb(143, 72, 5);
+}
+
+#mode{
+    /* margin-left: 120px; */
+    margin-top: -37px;
+    margin-left: 250px;
+    background: -webkit-radial-gradient(rgb(236, 135, 4), rgb(0, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#on{
+    margin-left: 350px;
+    margin-top: -37px;
+}
+
+
+#shift-but{
+    width: 40px;
+    height: 25px;
+    background-color: rgb(85, 117, 126);
+    margin-left: 30px;
+    /* margin-top: -20px; */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /* border-top-left-radius: 10px; */
+    border-bottom-right-radius: 20px;
+}
+
+#alpha-but{
+    width: 40px;
+    height: 25px;
+    background-color: rgb(85, 117, 126);
+    margin-left: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /* border-top-left-radius: 10px; */
+    border-bottom-right-radius: 20px;
+}
+
+#enter-but{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(85, 117, 126);
+    margin-left: 30px;
+    margin-top: -60px;
+    border-radius: 20px;
+    color: rgba(37, 54, 59, 0.5);
+    font-size: 14px;
+   
+    font-weight: bold;
+    box-shadow: inset 0.4em 0.4em 0.4em 0 rgba(37, 54, 59, 0.5), inset -0.4em -0.4em 0 rgba(37, 54, 59, 0.5) ;
+}
+
+#mode-but{
+    width: 40px;
+    height: 25px;
+    background-color: rgb(85, 117, 126);
+    margin-left: 20px;
+    margin-top: -60px;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* border-top-left-radius: 10px; */
+    border-bottom-left-radius: 20px;
+}
+
+#on-but{
+    width: 40px;
+    height: 25px;
+    background-color: rgb(85, 117, 126);
+    margin-left: 35px;
+    margin-top: -60px;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* border-top-left-radius: 10px; */
+    border-bottom-left-radius: 20px;
+}
+#take{
+    margin-top: -24px;
+}
+
+#hor1{
+    width: 56px;
+    transform: rotate(90deg);
+margin-top: -31px;
+margin-left: 200px;
+border: 1px solid rgb(39, 16, 16);
+background-color: rgb(39, 16, 16);
+}
+
+#hor2{
+    width: 56px;
+    transform: rotate(90deg);
+margin-top: -10px;
+margin-left: 240px;
+border: 1px solid rgb(39, 16, 16);
+background-color: rgb(39, 16, 16);
+}
+
+#hor3{
+    width: 56px;
+    transform: rotate(90deg);
+margin-top: -10px;
+margin-left: 280px;
+border: 1px solid rgb(39, 16, 16);
+background-color: rgb(39, 16, 16);
+}
+
+#hor4{
+    width: 56px;
+    transform: rotate(90deg);
+margin-top: -10px;
+margin-left: 320px;
+border: 1px solid rgb(39, 16, 16);
+background-color: rgb(39, 16, 16);
+}
+
+#center-but{
+    margin-left: 30px;
+    
+}
+
+#center1{
+    width: 50px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: white;
+    background-color: rgb(7, 24, 29);
+}
+
+#center2{
+    width: 50px;
+    margin-left: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: white;
+    background-color: rgb(7, 24, 29);
+}
+
+#center3{
+    width: 50px;
+    margin-left: 100px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: white;
+    background-color: rgb(7, 24, 29);
+}
+
+#center4{
+    width: 55px;
+    margin-left: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: white;
+    background-color: rgb(7, 24, 29);
+}
+
+#first-row button{
+    width: 50px;
+    margin-left: 5px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-top: -30px;
+    border-top-right-radius: 8px;
+    color: white;
+    background-color: rgb(7, 24, 29);
+}
+
+#first-row button:hover{
+    width: 52px;
+    height: 30px;
+}
+
+#second-row button{
+    width: 50px;
+    margin-left: 5px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-top-right-radius: 8px;
+    color: white;
+    background-color: rgb(7, 24, 29);
+    
+}
+#second-row button:hover{
+    width: 52px;
+    height: 30px;
+}
+
+#third-row button{
+    width: 50px;
+    margin-left: 5px;
+    background-color: rgb(7, 24, 29);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: white;   
+}
+
+#third-row button:hover{
+    width: 52px;
+    height: 30px;
+}
+
+#numbers{
+    margin-left: 30px;
+}
+
+#numbers button{
+    width: 60px;
+    height: 30px;
+    margin-left: 5px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 20px;
+}
+
+#numbers button:hover{
+    width: 62px;
+    height: 32px;
+    background-color: rgb(83, 69, 69);
+    color: white; 
+}
+#del{
+    background-color: rgb(255, 123, 0);
+}
+#dot{
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 30px;
+    margin-left: 15px;
+}
+
+@media(max-width:900px){
+    #body{
+        /* display: none; */
+        /* float: left; */
+        border:10px solid red;
+    }
+
+    body{
+        background-color: yellow;
+    }
+}
+
+</style>
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+    <div id="body">
+        
+<h1>CASIO</h1>
+<div id="solar"></div>
+<hr id="hor1">
+<hr id="hor2">
+<hr id="hor3">
+<hr id="hor4">
+<h3><i>fx-991ES PLUS</i></h3>
+<h2>NATURAL - V.P.A.m</h2>
+<h5>TWO WAY POWER</h5>
+
+<input type="text" id="display">
+
+<div id="top-buttons">
+        <h6 id="shift">SHIFT</h6>
+        <h6 id="alpha">ALPHA</h6>
+        <h6 id="mode">MODE SETUP</h6>
+        <h6 id ="on">ON</h6>
+        <div id="take">
+                <button id="shift-but"></button>
+                <button id= "alpha-but"></button>
+                <button id="enter-but">REPLAY</button>
+                <button id="mode-but"></button>
+                <button id="on-but"></button>
+        </div>
+    
+
+</div>
+
+<div id="center-but">
+    
+    <button id="center1"><b>CALC</b></button>
+    <button id="center2">&int;</button>
+    <button id="center3"><b><i>x<sup>-1</sup></i></b></button>
+    <button id="center4"><b>log<sub>[]</sub>[]</b></button>
+    <br>
+    <br>
+    <div id="first-row">
+    <button><b><sup>[]</sup>/<sub>[]</sub></b></button>
+    <button>&Sqrt;</button>
+    <button><i><b>x</b></i><sup><b>2</b></sup></button>
+    <button><i>x</i><sup>[]</sup></button>
+    <button><b>log</b></button>
+    <button><b>In</b></button>
+    </div>
+    <br>
+    
+    <div id="second-row">
+    <button><b>( - )</b></button>
+    <button><b>&deg;<sup>,,,</sup></b></button>
+    <button><b>hyp<b></button>
+    <button><b>sin</b></button>
+    <button><b>cos</b></button>
+    <button><b>tan</b></button>
+  </div>
+    <br>
+   
+    <div id="third-row">
+    <button>RCL</button>
+    <button>ENG</button>
+    <button>(</button>
+    <button>)</button>
+    <button>S&#8644;D</button>
+    <button>M&plus;</button>
+  </div>
+</div>
+<br>
+<br>
+
+<div id="numbers">
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button id="del">DEL</button>
+    <button id="del">AC</button>
+      <br>
+    <br>
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button>&times;</button>
+    <button>&divide;</button>
+      <br>
+    <br>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>&plus;</button>
+    <button>&minus;</button>
+      <br>
+    <br>
+    <button>0</button>
+    <button ><div id="dot"></div></button>
+    <button><i>&times;</i>10<sup><i>x</i></sup></button>
+    <button>Ans</button>
+    <button>&equals;</button>
+  </div>
+      <br>
+    <br>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
